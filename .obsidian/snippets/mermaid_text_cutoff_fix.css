@@ -1,0 +1,22 @@
+/* Faction Dashboard - Gentle Text Cutoff Fix for Mermaid Nodes */
+/* Place this file in: .obsidian/snippets/mermaid-text-fix.css */
+/* Enable in Settings → Appearance → CSS snippets */
+
+/* Gentle fix for text truncation - preserve node structure */
+.mermaid .nodeLabel {
+    /* Only fix the text overflow, keep everything else */
+    text-overflow: clip !important;
+    overflow: visible !important;
+}
+
+/* Allow node boxes to grow slightly wider if needed */
+.mermaid .node rect {
+    /* Let rectangles expand a bit more for longer text */
+    min-width: 120px !important;
+}
+
+/* Ensure text stays on one line but doesn't get cut */
+.mermaid .nodeLabel span {
+    white-space: nowrap !important;
+    display: inline-block !important;
+}

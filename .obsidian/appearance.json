@@ -1,0 +1,7 @@
+{
+  "cssTheme": "ITS Theme",
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "mermaid_text_cutoff_fix"
+  ]
+}

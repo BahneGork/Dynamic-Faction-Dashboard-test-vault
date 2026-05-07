@@ -1,0 +1,203 @@
+/* Faction Dashboard - Mermaid Arrow Colors CSS Snippet */
+/* Place this file in: .obsidian/snippets/mermaid-faction-colors.css */
+/* Enable in Settings → Appearance → CSS snippets */
+
+/* Target Mermaid edges based on the actual output structure from the faction dashboard */
+
+/* Allies - Green (🤝) */
+.mermaid .edgeLabel:contains("🤝") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("allies") ~ .edgePath .path {
+    stroke: #28a745 !important;
+    stroke-width: 2px !important;
+}
+
+/* Enemies - Red (⚔️) */
+.mermaid .edgeLabel:contains("⚔️") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("enemies") ~ .edgePath .path {
+    stroke: #dc3545 !important;
+    stroke-width: 2px !important;
+}
+
+/* Rivals - Purple (🥊) */
+.mermaid .edgeLabel:contains("🥊") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("rivals") ~ .edgePath .path {
+    stroke: #6f42c1 !important;
+    stroke-width: 2px !important;
+}
+
+/* Patrons - Blue (⬆️) */
+.mermaid .edgeLabel:contains("⬆️") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("patrons") ~ .edgePath .path {
+    stroke: #007bff !important;
+    stroke-width: 3px !important;
+}
+
+/* Vassals - Blue (⬇️) */
+.mermaid .edgeLabel:contains("⬇️") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("vassals") ~ .edgePath .path {
+    stroke: #007bff !important;
+    stroke-width: 3px !important;
+}
+
+/* Trading Partners - Orange (💰) */
+.mermaid .edgeLabel:contains("💰") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("trading_partners") ~ .edgePath .path {
+    stroke: #fd7e14 !important;
+    stroke-width: 2px !important;
+}
+
+/* Infiltrated By - Red Dotted (🕵️) */
+.mermaid .edgeLabel:contains("🕵️") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("infiltrated_by") ~ .edgePath .path {
+    stroke: #dc3545 !important;
+    stroke-width: 2px !important;
+    stroke-dasharray: 5,5 !important;
+}
+
+/* Competing With - Yellow (🏆) */
+.mermaid .edgeLabel:contains("🏆") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("competing_with") ~ .edgePath .path {
+    stroke: #ffc107 !important;
+    stroke-width: 2px !important;
+}
+
+/* Neutral Toward - Gray (🤷 or 😐) */
+.mermaid .edgeLabel:contains("🤷") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("😐") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("neutral_toward") ~ .edgePath .path {
+    stroke: #6c757d !important;
+    stroke-width: 1px !important;
+}
+
+/* Custom relationship types from tutorial examples */
+
+/* Open Warfare - Bright Red */
+.mermaid .edgeLabel:contains("Open_Warfare") ~ .edgePath .path {
+    stroke: #ff0000 !important;
+    stroke-width: 4px !important;
+}
+
+/* Active Intrigue - Orange (🔥) */
+.mermaid .edgeLabel:contains("🔥") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("Active_Intrigue") ~ .edgePath .path {
+    stroke: #ff6600 !important;
+    stroke-width: 3px !important;
+}
+
+/* Tutorial custom types */
+.mermaid .edgeLabel:contains("🎯") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("📸") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("blackmail_targets") ~ .edgePath .path {
+    stroke: #8b0000 !important;
+    stroke-width: 2px !important;
+    stroke-dasharray: 3,3 !important;
+}
+
+.mermaid .edgeLabel:contains("📡") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("information_sources") ~ .edgePath .path {
+    stroke: #17a2b8 !important;
+    stroke-width: 2px !important;
+}
+
+.mermaid .edgeLabel:contains("🏠") ~ .edgePath .path,
+.mermaid .edgeLabel:contains("safe_houses") ~ .edgePath .path {
+    stroke: #795548 !important;
+    stroke-width: 2px !important;
+}
+
+/* Alternative approach using edge paths directly */
+/* This targets the path elements more broadly */
+.mermaid g.edgePath:has(.edgeLabel:contains("🤝")) .path {
+    stroke: #28a745 !important;
+    stroke-width: 2px !important;
+}
+
+.mermaid g.edgePath:has(.edgeLabel:contains("⚔️")) .path {
+    stroke: #dc3545 !important;
+    stroke-width: 2px !important;
+}
+
+.mermaid g.edgePath:has(.edgeLabel:contains("🥊")) .path {
+    stroke: #6f42c1 !important;
+    stroke-width: 2px !important;
+}
+
+.mermaid g.edgePath:has(.edgeLabel:contains("⬆️")) .path {
+    stroke: #007bff !important;
+    stroke-width: 3px !important;
+}
+
+.mermaid g.edgePath:has(.edgeLabel:contains("⬇️")) .path {
+    stroke: #007bff !important;
+    stroke-width: 3px !important;
+}
+
+.mermaid g.edgePath:has(.edgeLabel:contains("💰")) .path {
+    stroke: #fd7e14 !important;
+    stroke-width: 2px !important;
+}
+
+.mermaid g.edgePath:has(.edgeLabel:contains("🕵️")) .path {
+    stroke: #dc3545 !important;
+    stroke-width: 2px !important;
+    stroke-dasharray: 5,5 !important;
+}
+
+.mermaid g.edgePath:has(.edgeLabel:contains("🏆")) .path {
+    stroke: #ffc107 !important;
+    stroke-width: 2px !important;
+}
+
+.mermaid g.edgePath:has(.edgeLabel:contains("🤷")) .path,
+.mermaid g.edgePath:has(.edgeLabel:contains("😐")) .path {
+    stroke: #6c757d !important;
+    stroke-width: 1px !important;
+}
+
+/* Enhanced node styling */
+.mermaid .node rect {
+    fill: var(--background-primary) !important;
+    stroke: var(--text-accent) !important;
+    stroke-width: 2px !important;
+}
+
+.mermaid .nodeLabel {
+    color: var(--text-normal) !important;
+    font-weight: bold !important;
+    fill: var(--text-normal) !important;
+}
+
+.mermaid .edgeLabel {
+    background: var(--background-primary) !important;
+    color: var(--text-normal) !important;
+    fill: var(--text-normal) !important;
+    border-radius: 3px !important;
+    padding: 2px 4px !important;
+}
+
+/* Hover effects */
+.mermaid .edgePath:hover .path {
+    stroke-width: 4px !important;
+    opacity: 0.8 !important;
+}
+
+.mermaid .node:hover rect {
+    fill: var(--background-modifier-hover) !important;
+    stroke-width: 3px !important;
+}
+
+/* Fallback for browsers that don't support :has() */
+@supports not selector(:has(*)) {
+    /* Use attribute selectors as fallback */
+    .mermaid .edgeLabel[title*="allies"] ~ .edgePath .path {
+        stroke: #28a745 !important;
+    }
+    
+    .mermaid .edgeLabel[title*="enemies"] ~ .edgePath .path {
+        stroke: #dc3545 !important;
+    }
+    
+    .mermaid .edgeLabel[title*="rivals"] ~ .edgePath .path {
+        stroke: #6f42c1 !important;
+    }
+}
